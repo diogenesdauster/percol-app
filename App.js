@@ -1,13 +1,26 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { Hideo } from "react-native-textinput-effects";
+import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <View style={styles.inputsgroup}>
+          <Hideo
+            style={styles.inputs}
+            iconClass={FontAwesomeIcon}
+            iconName={"user"}
+            iconColor={"white"}
+          />
+          <Hideo
+            style={styles.inputs}
+            iconClass={FontAwesomeIcon}
+            iconName={"key"}
+            iconColor={"white"}
+          />
+        </View>
       </View>
     );
   }
@@ -16,8 +29,17 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#009CA7",
+    alignItems: "center",
+    justifyContent: "center"
   },
+  inputsgroup: {
+    flex: 1,
+    justifyContent: "space-between"
+  },
+  inputs: {
+    flex: 0,
+    marginLeft: 30,
+    marginRight: 30
+  }
 });
