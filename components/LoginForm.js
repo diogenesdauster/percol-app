@@ -15,7 +15,7 @@ export default class LoginForm extends React.Component {
         <View style={styles.logoContainer}>
           <Image
             style={styles.logo}
-            source={require("./assets/logo.png")}
+            source={require("../assets/logo.png")}
             resizeMode="contain"
           />
         </View>
@@ -35,7 +35,7 @@ export default class LoginForm extends React.Component {
           placeholder="digite sua senha"
           ref={input => (this.inputPassword = input)}
         />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={this.props.onSubmit}>
           <Text style={styles.textButton}>Entrar</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonEsqueciSenha}>

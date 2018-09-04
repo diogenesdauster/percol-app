@@ -8,17 +8,22 @@ import {
 import LoginForm from "./LoginForm";
 
 export default class Login extends React.Component {
+  _onSubmit = () => {
+    const { navigate } = this.props.navigation;
+    navigate("Auth");
+  };
+
   render() {
     return (
       <KeyboardAvoidingView style={styles.container} behavior="padding">
         <ImageBackground
           style={{ flexGrow: 1 }}
-          source={require("./assets/Fachada.jpg")}
+          source={require("../assets/Fachada.jpg")}
         >
           <View style={styles.backgroundContainer} />
 
           <View style={styles.formContainer}>
-            <LoginForm />
+            <LoginForm onSubmit={this._onSubmit} />
           </View>
         </ImageBackground>
       </KeyboardAvoidingView>
