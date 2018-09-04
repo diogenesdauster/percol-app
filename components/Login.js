@@ -10,7 +10,7 @@ import LoginForm from "./LoginForm";
 export default class Login extends React.Component {
   _onSubmit = () => {
     const { navigate } = this.props.navigation;
-    navigate("Auth");
+    navigate("App");
   };
 
   render() {
