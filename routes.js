@@ -4,7 +4,12 @@ import { createStackNavigator, createSwitchNavigator } from "react-navigation";
 
 const AppStack = createStackNavigator({
   Home: {
-    screen: HomeScreen
+    screen: HomeScreen,
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: "#27C3CE"
+      }
+    }
   }
 });
 const AuthStack = createStackNavigator({

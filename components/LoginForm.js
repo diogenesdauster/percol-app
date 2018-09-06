@@ -10,7 +10,6 @@ import {
 
 export default class LoginForm extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <View style={styles.container}>
         <View style={styles.logoContainer}>
