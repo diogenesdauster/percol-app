@@ -3,15 +3,19 @@ import { View, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 class DrawerButton extends Component {
+  onOpenDrawer = () => {
+    const { navigation } = this.props;
+    navigation.openDrawer();
+  };
   render() {
-    const { onOpenDrawer } = this.props;
     return (
       <View>
-        <TouchableOpacity onPress={onOpenDrawer}>
+        <TouchableOpacity onPress={this.onOpenDrawer}>
           <FontAwesome
-            key="bars"
+            name="bars"
+            size={30}
             style={{
-              color: "white",
+              color: "#FFF",
               padding: 10,
               marginLeft: 10,
               fontSize: 20
