@@ -4,5 +4,5 @@ This app is bootstrapped using Create React Native App, for company Pernambuco C
 
 ## ScreenShots
 
-| <img src="https://github.com/diogenesdauster/percol-app/edit/master/shot2.jpeg" > | <img src="https://github.com/diogenesdauster/percol-app/edit/master/shot1.jpeg" > |
+| <img src="https://github.com/diogenesdauster/percol-app/blob/master/shot2.jpeg" > | <img src="https://github.com/diogenesdauster/percol-app/blob/master/shot1.jpeg" > |
 | :------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: |
